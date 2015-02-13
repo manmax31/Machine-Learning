@@ -178,7 +178,8 @@ if __name__ == "__main__":
 
     # Parse the document and force all generated docs into
     # a list so that it can be printed out to the console
-    ref_docs     = get_docs(files)
+    ref_docs = get_docs(files)
+
 
     # Vectorise and TF-IDF transform the corpus
     X, y = create_tfidf_training_data(ref_docs)
